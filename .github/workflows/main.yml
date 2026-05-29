@@ -43,7 +43,7 @@ jobs:
         uses: pulumi/actions@v7
         with:
           command: up
-          stack-name: stg
+          stack-name: rocketseat.iac/stg
           cloud-url: s3://al3xandr3sl-rocketseat-pulumi-stage
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
